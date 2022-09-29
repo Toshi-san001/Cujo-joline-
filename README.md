@@ -1,6 +1,4 @@
-<p align="center">
-   <a href="https://github.com/FantoX001">
-    <img src="https://telegra.ph/file/5a868e1cca475aa937b5a.mp4" width="610">
+
      
 </p>
 <h1 align="center"> Miku Nakano (Beta)
