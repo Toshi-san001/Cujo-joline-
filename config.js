@@ -7,27 +7,25 @@ global.autoReadAll = false
 global.antitags = true
 
 
-global.Owner = ['918101187835']
-global.OwnerNumber = ['918101187835']
-global.ownertag = ['918101187835']
-global.BotName = "Miku"
-global.packname = "Miku bot"
-global.author = "By: Fantox"
-global.OwnerName = "Fantox"
-global.BotSourceCode = "https://github.com/FantoX001/Miku-MD"
-global.SupportGroupLink = "https://chat.whatsapp.com/JcBzjRIxM5UHfuJbt0KrWt"
+global.Owner = ['919609900020']
+global.OwnerNumber = ['919609900020']
+global.ownertag = ['919609900020']
+global.BotName = "Siesta"
+global.packname = "👾 Handcrafted for you"
+global.author = "By: Toshi_san👾"
+global.OwnerName = "Toshi_3000/❤️"
 global.sessionName = "session"
 
 // Prefix //
 // If you want to change the prefix, change it and also change all switch's button id from Core.js  otherwise buttons will not work //
-global.prefa = ['-'] 
+global.prefa = ['!'] 
 
 
 global.location = "West Bengal, India"
 global.reactmoji = "❤️"
-global.themeemoji = "💖"
-global.vidmenu = { url: 'https://c.tenor.com/YGuLegQWubwAAAPo/miku-nakano-gotoubun-no-hanayome.mp4' }
-global.websitex = "https://github.com/FantoX001"
+global.themeemoji = "🤍"
+global.vidmenu = { url: 'https://telegra.ph/file/5a868e1cca475aa937b5a.mp4' }
+global.websitex = "https://github.com/Toshi-san001"
 global.lolhuman = "KaysaS"
 
 
