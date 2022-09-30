@@ -1531,7 +1531,7 @@ case 'daily': case 'reward': {
 	
 	        if (daily.cd) return replay(`You already claimed daily for today, come back in ${daily.cdL}`); //cdL is already formatted cooldown Left
 	
-            replay(`you have claimed 💴${daily.amount} For today`);        
+            replay(`Congratulations 🎉 You have claimed your daily *¥${daily.amount}*`);        
 }
 break
 
@@ -1648,7 +1648,7 @@ case 'wallet':  case 'purse': {
     const user = m.mentionedJid[0] ? m.mentionedJid[0] : m.sender
     const cara = "cara"
     const balance = await eco.balance(user, cara); //Returns wallet, bank, and bankCapacity. Also creates a USer if it doesn't exist.
-    await replay(`*👛User Wallet👛*\n\n🀄 *Name: ${pushname}'s*\n\n*💴Amount: ${balance.wallet}*`);
+    await replay(`*👛 User Wallet 👛*\n\n⛩️ *Name: ${pushname}'s*\n\n*¥Amount: ${balance.wallet}*`);
 }
 break
 			
@@ -1660,7 +1660,7 @@ case 'bank':  case 'levee': {
     const user = m.mentionedJid[0] ? m.mentionedJid[0] : m.sender
     const cara = "cara"
     const balance = await eco.balance(user, cara); //Returns wallet, bank, and bankCapacity. Also creates a USer if it doesn't exist.
-    await replay(`*🏦 User Bank*\n\🀄 *Name ${pushname}'s*\n\n*💴Amount: ${balance.bank}*`);
+    await replay(`*🏦 User Bank 🏦*\n\⛩️ *Name ${pushname}'s*\n\n*¥Amount: ${balance.bank}*`);
 }
 break
 
@@ -1733,7 +1733,7 @@ case 'withdraw':  case 'withdrawal': {
         const withdraw = await eco.withdraw(user, cara, query);
         if(withdraw.noten) return replay('* Insufficient fund in bank*'); //if user states more than whats in his wallet
         const add = eco.give(user, cara, query);
-          replay(`*ALERT >>*  ¥💴${withdraw.amount} has been added in your wallet.`)
+          replay(`*ALERT >>*  ¥${withdraw.amount} has been added in your wallet.`)
         
 }
 break
@@ -1825,7 +1825,7 @@ break
 
 
 case 'hi': case 'hello': {
-          replay(`Don't be scared, i am still active 😁`)
+          replay(`Hello ${pushname}`)
     }
     break
 
@@ -1834,13 +1834,13 @@ case 'nsfwmenu':
     if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
     if (!AntiNsfw) return reply(mess.nonsfw)
-        reply(` *━━━━━〈 🍑 NSFW Menu 🍆 〉━━━━━*\n\nhentaivideo, blowjobgif, hneko, masturbation, thighs, pussy, panties, orgy, ahegao, ass, bdsm, blowjob, cuckold, ero, gasm, cum, femdom, foot, gangbang, glasses, jahy, trap, blowjobgif, spank, hneko, hwaifu, gasm`)
+        reply(` *━━━━━〈  NSFW Menu  〉━━━━━*\n\nhentaivideo, blowjobgif, hneko, masturbation, thighs, pussy, panties, orgy, ahegao, ass, bdsm, blowjob, cuckold, ero, gasm, cum, femdom, foot, gangbang, glasses, jahy, trap, blowjobgif, spank, hneko, hwaifu, gasm`)
     break
 
 case 'reaction': case 'react': case 'reactions':
         if (isBan) return reply(mess.banned)	 			
         if (isBanChat) return reply(mess.bangc)
-            reply(` *━━━━━〈 🎭 Reactions 🔮 〉━━━━━*\n\nbonk, cry, bully, cuddle, hug, kiss, lick, pat, smug, yeet, blush, smile, wave, highfive, handhold, nom, glomp, bite, slap, kill, happy, wink, poke, dance, cringe`)
+            reply(` *━━━━━〈  Reactions  〉━━━━━*\n\nbonk, cry, bully, cuddle, hug, kiss, lick, pat, smug, yeet, blush, smile, wave, highfive, handhold, nom, glomp, bite, slap, kill, happy, wink, poke, dance, cringe`)
         break   
     
 
@@ -2117,7 +2117,7 @@ case 'delete': case 'del': {
     if (isBan) return reply(mess.banned)	 			
  if (isBanChat) return reply(mess.bangc)
  let anu = await store.chats.all().filter(v => v.id.endsWith('.net')).map(v => v)
- let teks = ` 「  Ethan's dm user list  」\n\nTotal ${anu.length} users are using Miku in personal chat.`
+ let teks = ` 「 dm user list  」\n\nTotal ${anu.length} users are using Miku in personal chat.`
  for (let i of anu) {
   teks += `\n\nProfile : @${i.id.split('@')[0]}\nChat : ${i.unreadCount}\nLastchat : ${moment(i.conversationTimestamp * 1000).tz("Asia/Kolkata").format("DD/MM/YYYY HH:mm:ss")}`
  }
