@@ -1,5 +1,5 @@
 {
- "name": "miku-md",
+ "name": "siesta-md",
  "description": "Multi Device Whatsapp Bot By Xeon",
  "version": "3.0.0",
  "main": "index.js",
@@ -18,10 +18,10 @@
   "bot-md",
   "multi-device"
  ],
- "author": "Fantox (FantoX001)",
+ "author": "Toshi-san",
  "license": "MIT",
  "dependencies": {
-  "@adiwajshing/baileys": "^4.3.0",
+  "@adiwajshing/baileys": "^4.4.0",
   "@adiwajshing/keyed-db": "^0.2.4",
   "@develoka/angka-terbilang-js": "^1.4.2",
   "@shineiichijo/marika": "^2.0.2",
@@ -43,6 +43,7 @@
   "anime-wallpaper": "^1.0.2",
   "fluent-ffmpeg": "^2.1.2",
   "fs": "0.0.1-security",
+  "discord-mongoose-economy": "^1.2.0",
   "g-i-s": "^2.1.6",
   "google-it": "^1.6.2",
   "got": "^11.8.3",
@@ -61,6 +62,7 @@
   "node-cron": "^3.0.0",
   "node-fetch": "^2.6.1",
   "rumus-bdr": "^1.0.0",
+  "mongo-glob-economy": "^1.0.12",
   "mongoose": "^6.2.1",
   "google-tts-api": "^2.0.2",
   "node-webpmux": "^3.1.0",
